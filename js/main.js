@@ -407,6 +407,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ── Hero Quick Form — Telegram ── */
+    const heroForm = document.getElementById('hero-quick-form');
+    if (heroForm) {
+        heroForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = heroForm.querySelector('[name="name"]').value.trim();
+            const phone = heroForm.querySelector('[name="phone"]').value.trim();
+
+            if (!name || !phone) return;
+
+            const submitBtn = heroForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+
+            try {
+                const text = [
+                    '📞 Quick Callback Request',
+                    '',
+                    '👤 Name: ' + name,
+                    '📞 Phone: ' + phone,
+                    '',
+                    '📍 Source: Hero Form',
+                    '⏰ ' + new Date().toLocaleString('en-CA', { timeZone: 'America/Toronto' })
+                ].join('\n');
+
+                await fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text })
+                });
+
+                heroForm.innerHTML = '<div style="color:rgba(255,255,255,0.8);font-size:14px;font-weight:500;padding:14px 20px;">Thanks, ' + name.split(' ')[0] + '! We\'ll call you back shortly.</div>';
+            } catch (err) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }
+        });
+    }
+
     /* ── Active Nav Link ── */
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
