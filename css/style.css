@@ -493,6 +493,12 @@ p:last-child { margin-bottom: 0; }
     padding: 120px 0 80px;
 }
 
+.hero-centered {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -529,6 +535,10 @@ p:last-child { margin-bottom: 0; }
     margin-bottom: 36px;
 }
 
+.hero-centered .hero-checklist {
+    justify-content: center;
+}
+
 .hero-checklist li {
     display: flex;
     align-items: center;
@@ -549,6 +559,90 @@ p:last-child { margin-bottom: 0; }
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+}
+
+.hero-centered .hero-cta {
+    justify-content: center;
+}
+
+/* Hero Quick Contact Form */
+.hero-form-wrapper {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.hero-form-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+.hero-form-label svg {
+    color: var(--color-accent);
+}
+
+.hero-form {
+    display: flex;
+    gap: 0;
+    max-width: 580px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-full);
+    padding: 6px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-form-input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 20px;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-white);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.hero-form-input::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+.hero-form-input:first-child {
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-form-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.hero-form-btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(255,155,67,0.35);
 }
 
 /* ============================================
@@ -2370,9 +2464,13 @@ p:last-child { margin-bottom: 0; }
     /* Hero */
     .hero { min-height: 90vh; }
     .hero-content { padding: 100px 0 60px; }
+    .hero-centered { text-align: left; }
+    .hero-centered .hero-checklist { justify-content: flex-start; }
+    .hero-centered .hero-cta { justify-content: flex-start; }
     .hero-checklist { gap: 8px 16px; }
     .hero-cta { flex-direction: column; }
     .hero-cta .btn { width: 100%; }
+    .hero-form-wrapper { display: none; }
 
     /* Trust */
     .trust-grid {
