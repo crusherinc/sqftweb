@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ── Mobile Dropdown Toggle ── */
     document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
         link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 1100) {
                 e.preventDefault();
                 const dropdown = link.parentElement;
                 dropdown.classList.toggle('open');
