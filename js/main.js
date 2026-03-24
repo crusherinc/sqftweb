@@ -223,6 +223,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* ── Service Tabs ── */
+    document.querySelectorAll('.tab-nav').forEach(nav => {
+        nav.addEventListener('click', (e) => {
+            const btn = e.target.closest('.tab-btn');
+            if (!btn) return;
+            const tabGroup = btn.closest('.service-tabs');
+            tabGroup.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            tabGroup.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            const panel = tabGroup.querySelector(`#${btn.dataset.tab}`);
+            if (panel) panel.classList.add('active');
+        });
+    });
+
     /* ── Contact Form — Telegram ── */
     const TELEGRAM_BOT_TOKEN = '8751562131:AAFLI7-XXHoPVn9P34SLKbOOVWH8O2YDhzA';
     const TELEGRAM_CHAT_ID = '-5164693652';
