@@ -2690,6 +2690,22 @@ p:last-child { margin-bottom: 0; }
         padding: 0 16px;
     }
 
+    /* Buttons — allow text wrap, prevent overflow */
+    .btn {
+        white-space: normal;
+        text-align: center;
+    }
+
+    /* CTA button group — stack vertically, centered */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
     .section {
         padding: 64px 0;
     }
@@ -2841,6 +2857,7 @@ p:last-child { margin-bottom: 0; }
 
     .slider-btn { width: 40px; height: 40px; }
 
+    /* Smaller padding on small phones — text-wrap already set at 768px */
     .btn { padding: 12px 24px; font-size: 14px; }
-    .btn-lg { padding: 14px 32px; font-size: 15px; }
+    .btn-lg { padding: 14px 28px; font-size: 15px; }
 }

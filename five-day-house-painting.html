@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day House Painting in Toronto & GTA | SQFT Contracting</title>
+    <meta name="description" content="Professional 5-day interior house painting in Toronto and the GTA. Fast, clean, organized painting process for walls, ceilings, trim, doors, and full interior repaints.">
+    <meta name="keywords" content="5-day house painting Toronto, interior painting GTA, house painters Toronto, residential painting Toronto, full interior repaint, professional painters GTA, drywall patching and painting, trim and door painting, ceiling painting, surface preparation and painting">
+    <meta name="author" content="SQFT Contracting">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="5-Day House Painting in Toronto & GTA | SQFT Contracting">
+    <meta property="og:description" content="Professional 5-day interior house painting in Toronto and the GTA. Fast, clean, organized painting process from prep to final walkthrough.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <style>
+        /* ── Page-specific styles ── */
+
+        /* Hero — full-viewport split layout */
+        .fdp-hero {
+            background: var(--color-white);
+            padding: 0;
+            overflow: hidden;
+            height: calc(100vh - 112px);
+            min-height: 580px;
+        }
+        .fdp-hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+        }
+        /* Left half: content aligned with site container */
+        .fdp-hero-content-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            /* left padding mirrors the container margin + padding */
+            padding: 60px 56px 60px max(24px, calc((100vw - 1400px) / 2 + 24px));
+        }
+        .fdp-hero-content {
+            width: 100%;
+            max-width: 560px;
+            display: flex;
+            flex-direction: column;
+        }
+        .fdp-hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,155,67,0.12);
+            color: var(--color-accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+        .fdp-hero-tag svg {
+            width: 14px; height: 14px;
+        }
+        .fdp-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--color-dark);
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .fdp-hero h1 span {
+            color: var(--color-accent);
+        }
+        .fdp-hero-sub {
+            font-size: 1.05rem;
+            color: var(--color-gray-500);
+            line-height: 1.65;
+            margin-bottom: 28px;
+            max-width: 480px;
+        }
+        .fdp-hero-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 36px;
+        }
+        .fdp-hero-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text);
+        }
+        .fdp-hero-list li svg {
+            width: 18px; height: 18px;
+            color: var(--color-accent);
+            flex-shrink: 0;
+        }
+        .fdp-hero-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .fdp-hero-image {
+            position: relative;
+            overflow: hidden;
+            /* no border-radius — image bleeds to edge */
+        }
+        .fdp-hero-image img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .fdp-hero-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(21,21,21,0.18) 0%, transparent 60%);
+        }
+
+        /* Trust badges bar */
+        .fdp-trust-bar {
+            background: var(--color-dark);
+            padding: 18px 0;
+        }
+        .fdp-trust-bar-inner {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px 32px;
+        }
+        .fdp-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+        .fdp-trust-item svg {
+            width: 16px; height: 16px;
+            color: var(--color-accent);
+            flex-shrink: 0;
+        }
+        .fdp-trust-divider {
+            width: 1px;
+            height: 20px;
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* Problem cards */
+        .problem-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0 36px;
+        }
+        .problem-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .problem-card-icon {
+            width: 52px; height: 52px;
+            background: rgba(255,155,67,0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            color: var(--color-accent);
+        }
+        .problem-card-icon svg { width: 26px; height: 26px; }
+        .problem-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+        .problem-card p {
+            font-size: 0.88rem;
+            color: var(--color-gray-500);
+            line-height: 1.55;
+        }
+        .problem-transition {
+            background: var(--color-accent);
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 16px 28px;
+            border-radius: var(--radius-md);
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        /* 5-Day process timeline */
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
+            margin-top: 48px;
+            position: relative;
+        }
+        .day-grid::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-accent), rgba(255,155,67,0.3));
+            z-index: 0;
+        }
+        .day-card {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 12px;
+        }
+        .day-number {
+            width: 72px; height: 72px;
+            background: var(--color-dark);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 3px solid var(--color-accent);
+        }
+        .day-number-label {
+            font-size: 9px;
+            font-weight: 600;
+            color: var(--color-accent);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .day-number-digit {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-white);
+            line-height: 1.1;
+        }
+        .day-card-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .day-card-text {
+            font-size: 0.8rem;
+            color: var(--color-gray-500);
+            line-height: 1.55;
+        }
+
+        /* What's included checklist */
+        .included-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 40px 0 32px;
+        }
+        .included-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text);
+            box-shadow: var(--shadow-sm);
+        }
+        .included-item svg {
+            width: 18px; height: 18px;
+            color: var(--color-accent);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .included-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-gray-500);
+            background: var(--color-gray-100);
+            border-radius: var(--radius-md);
+            padding: 14px 24px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        /* Spray vs Roll comparison */
+        .finish-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin: 40px 0 36px;
+        }
+        .finish-card {
+            background: var(--color-white);
+            border: 2px solid var(--color-gray-200);
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            transition: var(--transition);
+        }
+        .finish-card:hover {
+            border-color: var(--color-accent);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .finish-card-badge {
+            display: inline-block;
+            background: var(--color-accent);
+            color: var(--color-white);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            margin-bottom: 16px;
+        }
+        .finish-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+        }
+        .finish-card ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .finish-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--color-text);
+        }
+        .finish-card ul li svg {
+            width: 16px; height: 16px;
+            color: var(--color-accent);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .finish-cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
+        .finish-cta .btn {
+            white-space: normal;
+            text-align: center;
+            max-width: min(520px, 100%);
+        }
+
+        /* Why choose — feature cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .feature-card:hover {
+            background: rgba(255,155,67,0.08);
+            border-color: rgba(255,155,67,0.3);
+        }
+        .feature-card-icon {
+            width: 56px; height: 56px;
+            background: rgba(255,155,67,0.15);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            color: var(--color-accent);
+        }
+        .feature-card-icon svg { width: 28px; height: 28px; }
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+        }
+        .feature-support-text {
+            text-align: center;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.65);
+            max-width: 600px;
+            margin: 36px auto 0;
+            line-height: 1.7;
+        }
+
+        /* Gallery grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+        .gallery-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 4/3;
+            background: var(--color-gray-200);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.04);
+        }
+        .gallery-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(21,21,21,0.75));
+            color: var(--color-white);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 28px 20px 14px;
+        }
+
+        /* Service areas */
+        .areas-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 36px;
+            justify-content: center;
+        }
+        .area-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            color: var(--color-text);
+            font-size: 0.88rem;
+            font-weight: 500;
+            padding: 9px 18px;
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .area-chip:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+        .area-chip svg {
+            width: 14px; height: 14px;
+            color: var(--color-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .day-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 32px;
+            }
+            .day-grid::before { display: none; }
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .included-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .fdp-hero {
+                height: auto;
+                min-height: auto;
+            }
+            .fdp-hero-inner {
+                grid-template-columns: 1fr;
+            }
+            .fdp-hero-content-wrap {
+                padding: 40px 5vw 32px;
+                justify-content: flex-start;
+            }
+            .fdp-hero-content {
+                max-width: 100%;
+            }
+            .fdp-hero-image {
+                aspect-ratio: 16/9;
+                order: -1;
+                position: relative;
+            }
+            /* Hero CTA buttons — stack vertically */
+            .fdp-hero-btns {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .fdp-hero-btns .btn {
+                width: 100%;
+                max-width: 340px;
+                justify-content: center;
+            }
+            .fdp-trust-divider { display: none; }
+            .problem-cards {
+                grid-template-columns: 1fr;
+            }
+            .day-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .day-card { text-align: left; display: flex; align-items: flex-start; gap: 20px; }
+            .day-number { width: 56px; height: 56px; flex-shrink: 0; margin: 0; }
+            .day-number-digit { font-size: 18px; }
+            .included-grid {
+                grid-template-columns: 1fr;
+            }
+            .finish-cards {
+                grid-template-columns: 1fr;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "5-Day House Painting",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "SQFT Contracting",
+            "telephone": "+14374380209",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Toronto",
+                "addressRegion": "ON",
+                "addressCountry": "CA"
+            },
+            "areaServed": ["Toronto", "Mississauga", "Etobicoke", "North York", "Scarborough", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
+        },
+        "description": "Professional 5-day interior house painting service in Toronto and the GTA including walls, ceilings, trim, doors, and full interior repaints.",
+        "serviceType": "Interior Painting"
+    }
+    </script>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     HEADER
+     ════════════════════════════════════════════ -->
+<header class="header header-solid">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-left">
+                <div class="header-top-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Mon – Fri: 8:00 AM – 6:00 PM
+                </div>
+                <div class="header-top-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Serving Toronto &amp; the GTA
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="tel:+14374380209">(437) 438-0209</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="IMG/logo-white.svg" alt="SQFT Contracting"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-dropdown">
+                    <a href="services.html" class="nav-link active">
+                        Services
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/drywall.html">Drywall</a></li>
+                        <li><a href="services/painting.html">Painting</a></li>
+                        <li><a href="services/tiling.html">Tiling</a></li>
+                        <li><a href="services/flooring.html">Flooring</a></li>
+                        <li><a href="services/demolition.html">Demolition</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-menu-bottom">
+                    <a href="tel:+14374380209" class="nav-menu-phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        (437) 438-0209
+                    </a>
+                    <a href="contact.html" class="nav-menu-cta">Get Free Estimate</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+14374380209" class="nav-phone" aria-label="Call us">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </a>
+                <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Get Free Estimate</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<div class="mobile-backdrop"></div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 1 — HERO
+     ════════════════════════════════════════════ -->
+<section class="fdp-hero">
+    <div class="fdp-hero-inner">
+        <!-- Content side -->
+        <div class="fdp-hero-content-wrap">
+            <div class="fdp-hero-content reveal">
+                <div class="fdp-hero-tag">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    Professional Interior Painting
+                </div>
+                <h1>5-Day House <span>Painting</span></h1>
+                <p class="fdp-hero-sub">Professional interior painting completed in as little as 5 days with a clean, organized, production-based process.</p>
+                <ul class="fdp-hero-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Full interior repaints
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Walls, ceilings, trim &amp; doors
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Clean prep and protection
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Fast, organized turnaround
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Final walkthrough included
+                    </li>
+                </ul>
+                <div class="fdp-hero-btns">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get Free Estimate</a>
+                    <a href="#process" class="btn btn-outline btn-lg">View Our Process</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image side — fills right 50% edge-to-edge -->
+        <div class="fdp-hero-image">
+            <img src="IMG/living-room-repaint.png" alt="Professional interior painting by SQFT Contracting" loading="eager">
+        </div>
+    </div>
+</section>
+
+<!-- Trust badges bar -->
+<div class="fdp-trust-bar">
+    <div class="container">
+        <div class="fdp-trust-bar-inner">
+            <div class="fdp-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Serving Toronto &amp; the GTA
+            </div>
+            <div class="fdp-trust-divider"></div>
+            <div class="fdp-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                Free Estimates
+            </div>
+            <div class="fdp-trust-divider"></div>
+            <div class="fdp-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                Professional Interior Painting
+            </div>
+            <div class="fdp-trust-divider"></div>
+            <div class="fdp-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Clean Job Sites
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 2 — PROBLEM
+     ════════════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">The Problem</span>
+            <h2 class="section-title">Interior Painting Shouldn't Take Weeks</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:16px auto 0">Many homeowners delay painting because they expect dust, disruption, unfinished rooms, and a project that drags on for too long. Our 5-Day House Painting system is built to keep the job organized from preparation to final walkthrough.</p>
+        </div>
+
+        <div class="problem-cards reveal-group">
+            <div class="problem-card">
+                <div class="problem-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h3>Long, Messy Projects</h3>
+                <p>Painting that drags on for weeks creates unnecessary disruption, dust accumulation, and stress for the whole household.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3>Poor Preparation</h3>
+                <p>Skipping proper surface prep leads to peeling, uneven coverage, and a finish that won't last — requiring costly touch-ups.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3>Unclear Timelines</h3>
+                <p>Without a defined schedule, projects stall, rooms stay out of use, and there's no clear end in sight for homeowners.</p>
+            </div>
+        </div>
+
+        <div class="problem-transition reveal">
+            Our process is designed to be clean, fast, and professionally managed — from day one to final walkthrough.
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 3 — 5-DAY PROCESS
+     ════════════════════════════════════════════ -->
+<section class="section" id="process">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">How It Works</span>
+            <h2 class="section-title">Our 5-Day Painting Process</h2>
+            <p class="section-subtitle" style="max-width:640px;margin:16px auto 0">A structured, production-based workflow that keeps your home painting project on schedule, clean, and professionally managed from start to finish.</p>
+        </div>
+
+        <div class="day-grid reveal-group">
+            <div class="day-card">
+                <div class="day-number">
+                    <span class="day-number-label">Day</span>
+                    <span class="day-number-digit">1</span>
+                </div>
+                <div>
+                    <div class="day-card-title">Prep &amp; Protection</div>
+                    <p class="day-card-text">We protect floors, cover furniture, mask all surfaces, complete minor wall repairs, sand, clean dust, and prepare the entire home for production painting.</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <div class="day-number">
+                    <span class="day-number-label">Day</span>
+                    <span class="day-number-digit">2</span>
+                </div>
+                <div>
+                    <div class="day-card-title">Ceilings &amp; First Coats</div>
+                    <p class="day-card-text">We begin production painting — completing ceilings and starting first coats on walls with an organized, room-by-room system.</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <div class="day-number">
+                    <span class="day-number-label">Day</span>
+                    <span class="day-number-digit">3</span>
+                </div>
+                <div>
+                    <div class="day-card-title">Walls &amp; Corrections</div>
+                    <p class="day-card-text">We complete all wall coats, inspect coverage, correct any imperfections, and ensure surfaces look consistent and uniform throughout.</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <div class="day-number">
+                    <span class="day-number-label">Day</span>
+                    <span class="day-number-digit">4</span>
+                </div>
+                <div>
+                    <div class="day-card-title">Trim, Doors &amp; Detail Work</div>
+                    <p class="day-card-text">We focus on baseboards, doors, frames, window trim, and all detail finishing — clean lines, sharp cuts, and precise application.</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <div class="day-number">
+                    <span class="day-number-label">Day</span>
+                    <span class="day-number-digit">5</span>
+                </div>
+                <div>
+                    <div class="day-card-title">Touch-Ups &amp; Walkthrough</div>
+                    <p class="day-card-text">We remove all protection, clean the entire work area, complete final touch-ups, and walk through the finished project with you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 4 — WHAT'S INCLUDED
+     ════════════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">Scope of Work</span>
+            <h2 class="section-title">What's Included</h2>
+            <p class="section-subtitle" style="max-width:600px;margin:16px auto 0">A comprehensive interior repaint covering all major surfaces, with professional preparation and a clean finish throughout.</p>
+        </div>
+
+        <div class="included-grid reveal-group">
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Floor and furniture protection
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Surface preparation
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Minor drywall patching
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Sanding and dust cleanup
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                All interior walls
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Ceilings
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Baseboards
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Doors
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Door frames
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Window trim
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Final touch-ups
+            </div>
+            <div class="included-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Final client walkthrough
+            </div>
+        </div>
+
+        <p class="included-note reveal">Exact scope depends on the home size, surface condition, and selected painting package. We'll confirm everything in your free estimate.</p>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 5 — ROLL OR SPRAY
+     ════════════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">Application Method</span>
+            <h2 class="section-title">Roller or Spray Finish Available</h2>
+            <p class="section-subtitle" style="max-width:660px;margin:16px auto 0">Every home is different. Depending on the project, we can use traditional roll-and-brush application or a professional spray system for selected surfaces such as doors, trim, and large open areas.</p>
+        </div>
+
+        <div class="finish-cards reveal-group">
+            <div class="finish-card">
+                <div class="finish-card-badge">Standard</div>
+                <h3>Standard Roll Finish</h3>
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Great for occupied homes
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Controlled, precise application
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Ideal for walls and ceilings
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Easier future touch-ups
+                    </li>
+                </ul>
+            </div>
+            <div class="finish-card">
+                <div class="finish-card-badge">Premium</div>
+                <h3>Professional Spray Finish</h3>
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Smooth, premium factory-like finish
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Excellent for doors and trim
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Fast production in prepared spaces
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        Requires detailed masking and protection
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="finish-cta reveal">
+            <a href="contact.html" class="btn btn-primary btn-lg">Ask About the Best Option for Your Home</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 6 — WHY CHOOSE US
+     ════════════════════════════════════════════ -->
+<section class="section dark-section">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label" style="background:rgba(255,155,67,0.15);color:var(--color-accent)">Why SQFT Contracting</span>
+            <h2 class="section-title" style="color:var(--color-white)">Built for Speed, Cleanliness &amp; Quality</h2>
+        </div>
+
+        <div class="feature-grid reveal-group">
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3>Organized 5-Day Workflow</h3>
+                <p>A structured daily schedule keeps the project moving without delays, surprises, or stalled rooms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Clean Job-Site Protection</h3>
+                <p>Floors, furniture, and surfaces are fully protected before we touch a single wall. Clean in, clean out.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3>Professional Surface Preparation</h3>
+                <p>Proper prep is 80% of a quality paint job. We sand, patch, clean, and prime before any colour goes on.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                </div>
+                <h3>Final Quality Inspection</h3>
+                <p>Before we leave, we walk through every room with the client to confirm the finish meets expectations.</p>
+            </div>
+        </div>
+
+        <p class="feature-support-text reveal">Our team follows a structured process so your project moves efficiently without sacrificing prep, detail, or finish quality. House painters Toronto trust for residential interior repaints throughout the GTA.</p>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 7 — GALLERY
+     ════════════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">Our Work</span>
+            <h2 class="section-title">Recent Interior Painting Work</h2>
+            <p class="section-subtitle" style="max-width:580px;margin:16px auto 0">Full interior repaints for Toronto and GTA homeowners — clean surfaces, sharp lines, professional results.</p>
+        </div>
+
+        <div class="gallery-grid reveal-group">
+            <div class="gallery-item">
+                <img src="IMG/living-room-repaint.png" alt="Living room repaint by SQFT Contracting Toronto" loading="lazy">
+                <div class="gallery-label">Living Room Repaint</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG/interior painting.webp" alt="Bedroom interior painting GTA" loading="lazy">
+                <div class="gallery-label">Bedroom Interior Painting</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG/interior painting (2).webp" alt="Hallway and staircase painting Toronto" loading="lazy">
+                <div class="gallery-label">Hallway &amp; Staircase Painting</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG/interior painting (4).webp" alt="Trim and door painting Toronto" loading="lazy">
+                <div class="gallery-label">Trim &amp; Door Finish</div>
+            </div>
+        </div>
+
+        <div class="projects-cta reveal" style="margin-top:36px">
+            <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 8 — SERVICE AREAS
+     ════════════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">Coverage Area</span>
+            <h2 class="section-title">5-Day House Painting Across Toronto &amp; the GTA</h2>
+            <p class="section-subtitle" style="max-width:580px;margin:16px auto 0">We provide professional residential painting Toronto to Burlington — wherever you are in the GTA, we can have your home painted in just 5 days.</p>
+        </div>
+
+        <div class="areas-grid reveal">
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Toronto
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Mississauga
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Etobicoke
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                North York
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Scarborough
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Brampton
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Vaughan
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Richmond Hill
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Markham
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Oakville
+            </div>
+            <div class="area-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Burlington
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 9 — FAQ
+     ════════════════════════════════════════════ -->
+<section class="section" id="faq">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle" style="max-width:560px;margin:16px auto 0">Common questions about our 5-day house painting service in Toronto and the GTA.</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Can every house be painted in 5 days?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Most standard interior repaint projects can be completed in as little as 5 days, depending on size, surface condition, preparation needs, number of trim pieces, doors, colors, and whether the home is occupied. We'll confirm the timeline during your free estimate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Do I need to leave the house during painting?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Not always. We plan the project room by room and protect work areas thoroughly. For spray painting or large full-home repaints, temporary access adjustments may be recommended to allow for proper ventilation and clean application.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Is paint included?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Paint can be included in the estimate or supplied separately depending on the project. We can recommend suitable paint products and finishes based on the surfaces, lighting, and desired look for each room.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Do you repair walls before painting?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Yes. Minor drywall patching, sanding, and surface preparation are included as part of the standard scope. For more extensive drywall repairs, we can include those as part of a broader estimate before painting begins.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Do you spray or roll?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        We offer both options depending on the home, surfaces, and desired finish. Standard roller and brush application is used for most occupied homes. Professional spray application is available for doors, trim, and large prepared spaces where a smoother finish is preferred.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    Do you provide free estimates?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Yes. You can request a free estimate through our website contact form or by sending project photos directly. We'll review the scope and provide a clear, transparent quote with no obligation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     SECTION 10 — FINAL CTA
+     ════════════════════════════════════════════ -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Paint Your Home in Just 5 Days?</h2>
+        <p>Get a clean, organized, professional interior painting experience from preparation to final walkthrough. Serving Toronto and the GTA.</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get Free Estimate</a>
+            <a href="tel:+14374380209" class="btn btn-outline-light btn-lg">Call Now</a>
+        </div>
+        <div class="cta-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            (437) 438-0209
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="IMG/logo-white.svg" alt="SQFT Contracting"></div>
+                <div class="footer-tagline">Drywall &bull; Painting &bull; Tiling &bull; Flooring &bull; Demolition</div>
+                <p>Professional interior finishing services for residential homes across Toronto and the Greater Toronto Area.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.49a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13.2a8.16 8.16 0 005.58 2.17V12a4.83 4.83 0 01-3.58-1.63V6.69h3.58z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-heading">Quick Links</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-heading">Services</div>
+                <div class="footer-links">
+                    <a href="services/drywall.html">Drywall</a>
+                    <a href="services/painting.html">Painting</a>
+                    <a href="services/tiling.html">Tiling</a>
+                    <a href="services/flooring.html">Flooring</a>
+                    <a href="services/demolition.html">Demolition</a>
+                    <a href="five-day-house-painting.html">5-Day Painting</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-heading">Get in Touch</div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:+14374380209">(437) 438-0209</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    <a href="mailto:info@sqftcontracting.ca">info@sqftcontracting.ca</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Mon – Fri: 8:00 AM – 6:00 PM
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Toronto &amp; the GTA, Ontario
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2025 SQFT Contracting. All rights reserved.</span>
+            <span>Serving Toronto, Mississauga, Etobicoke, North York &amp; the GTA</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
